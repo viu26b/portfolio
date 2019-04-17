@@ -1,0 +1,33 @@
+header{
+  background-color: rgb(213, 161, 18);
+  font-size: 2em;
+  text-align: center;
+}
+nav{
+  background-color: rgb(73, 72, 70);
+}
+img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+h2{
+  background-color: rgb(213, 161, 18);
+  font-size: 3em;
+  text-align: center;
+}
+h3{
+  font-size: 1.5em;
+}
+body{
+  background-image: url("../images/detective_1.png");
+  background-repeat: repeat;
+  background-size: 300px 200px;
+  font-family: 'Kaushan Script', cursive;
+}
+p{
+  background-color: gray;
+  text-align: center;
+
+}

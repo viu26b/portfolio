@@ -1,0 +1,42 @@
+#eve{
+  color: rgb(102, 0, 51);
+}
+.center{
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 50%;
+}
+.button{
+  background-color: rgb(102, 0, 51);
+  width: 10em;
+}
+
+button:hover,
+button:focus {
+    background: #0053ba;
+}
+
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+
+button:active {
+    transform: scale(0.99);
+}
+
+body{
+  background-color: rgb(51, 153, 255);
+}
+
+h1{
+  font-family: "Helvetica", sans-serif;
+  font-size: 3em;
+  font-style: oblique;
+  text-align: center;
+}
+
+p{
+  text-align: center;
+}

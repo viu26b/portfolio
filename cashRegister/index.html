@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <button><a href="../index.html">Portfolio</a></button>
+  <h1>The Grocery Store!</h1>
+  <div id="groceries">
+    <span class="pics"><img src="images/shopBasket1.jpeg" alt="grocery aisle" width="310"></span>
+    <span class="pics"><img src="images/shopBasket1.jpeg" alt="grocery aisle" width="310"></span>
+    <span class="pics"><img src="images/shopBasket1.jpeg" alt="grocery aisle" width="310"></span>
+</div>
+
+<p></p>
+
+<div align="center">
+  <table>
+    <thead>
+      <tr>
+      <th><span class="item">Item</span></th>
+      <th><span class="cost">Cost</span></th>
+    </tr>
+  </thead>
+  <tr>
+    <td><span class="item"><em>Arugula</em></span></td>
+    <td><span class="cost">3.49</span></td>
+  </tr>
+  <tr>
+    <td><span class="item"><em>Coconut Oil</em></span></td>
+    <td><span class="cost">16.98</span></td>
+  </tr>
+  <tr>
+    <td><span class="item"><em>Garlic Powder</em></span></td>
+    <td><span class="cost">7.67</span></td>
+  </tr>
+  <tr>
+    <td><span class="item"><em>Green Onions</em></span></td>
+    <td><span class="cost">1.79</span></td>
+  </tr>
+  <tr>
+    <td><span class="item"><em>Lamb</em></span></td>
+    <td><span class="cost">36.99</span></td>
+  </tr>
+  <tr>
+    <td><span class="item"><em>Monkfish</em></span></td>
+    <td><span class="cost">39.49</span></td>
+  </tr>
+  <tr>
+    <td><span class="item"><em>Pheasant</em></span></td>
+    <td><span class="cost">142.80</span></td>
+  </tr>
+  <tr>
+    <td><span class="item"><em>Shitakes</em></span></td>
+    <td><span class="cost">6.99</span></td>
+  </tr>
+  </table>
+</div>
+
+<p id="output">Your total is... </p>
+
+  <form name="grocery-items">
+  <span class="item">Enter quantity of <strong>Arugula:</strong></span> <input type="number" id="aru">
+  <span class="cost">Enter quantity of <strong>Coconut Oil:</strong></span> <input type="number" id="coco">
+  <span class="item">Enter quantity of <strong>Garlic Powder:</strong></span> <input type="number" id="garl"><br>
+  <span class="cost">Enter quantity of <strong>Green Onions:</strong></span> <input type="number" id="gree">
+  <span class="item">Enter quantity of <strong>Lamb:</strong></span> <input type="number" id="lam">
+  <span class="cost">Enter quantity of <strong>Monkfish:</strong></span> <input type="number" id="mon"><br>
+  <span class="item">Enter quantity of <strong>Pheasant:</strong></span> <input type="number" id="phea">
+  <span class="cost">Enter quantity of <strong>Shitakes:</strong></span> <input type="number" id="shi">
+
+  <input type="button" value="Go" onClick="addUpShopList();">
+</form>
+  <script src="cash.js"></script>
+</body>
+</html>

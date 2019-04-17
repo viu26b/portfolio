@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="css/credit.css">
+  <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+</head>
+<body>
+  <button><a href="../index.html">Portfolio</a></button>
+  <header>
+  <h1>Is Your CC# Valid?</h1>
+  </header>
+  <nav>
+    <img src="images/detective.jpg" alt="detective silhouette">
+  </nav>
+  <section>
+    <h2>Let's Find Out!<h2>
+  </section>
+  <div align="center"><form name="validator">
+    <h3 style="background-color: rgb(213, 161, 18);">Enter Your 16 Digit Credit Card #:</h3><br>
+<input type="text" placeholder="XXXXXXXXXXXXXXXX" id="userInput">
+<input type="button" value="CheckIfValid" onclick="validateCreditCard();">
+  </form></div>
+  <p id="resultOne" style="color: red;"></p>
+  <script src="valid.js"></script>
+</body>
+</html>

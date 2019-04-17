@@ -1,0 +1,50 @@
+nav{
+  display: flex;
+  justify-content: space-between;
+}
+
+#feature{
+  justify-content: flex-start;
+}
+
+#feature{
+  color: rgb(212, 205, 205);
+  padding: 10px;
+}
+
+#shop{
+  justify-content: flex-end;
+}
+
+#shop{
+  background-color: rgb(255, 255, 255);
+  color: rgb(239, 27, 27);
+  padding: 10px;
+}
+
+.vintage{
+  color: rgb(212, 205, 205);
+}
+section{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section div p{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  background-image: url('https://images.pexels.com/photos/674010/pexels-photo-674010.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=200');
+  background-repeat: repeat;
+}
+
+p{
+  font-family: 'Vidaloka', serif;
+  text-align: center;
+}

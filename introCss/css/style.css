@@ -1,0 +1,52 @@
+#spain{
+  color: rgb(235, 184, 16);
+}
+
+#italy{
+  color: rgb(235, 111, 16);
+}
+
+#greece{
+  color: rgb(235, 45, 16);
+}
+
+.noire{
+  color: rgb(232, 94, 44);
+}
+
+.go{
+  color: rgb(222, 25, 97);
+}
+
+.see-some{
+  color: rgb(192, 41, 96);
+}
+
+.world{
+  color: rgb(148, 36, 77);
+}
+
+body{
+  background-color: rgb(115, 243, 243);
+}
+
+h1{
+  color: rgb(232, 163, 44);
+  text-align: center;
+}
+
+h2{
+  background-color: rgb(38, 112, 242);
+  font-family: fantasy;
+  text-align: center;
+}
+
+p{
+  font-family: cursive;
+}
+img{
+  border: ridge 10px rgb(143, 156, 156);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

@@ -1,0 +1,49 @@
+header{
+  padding: 10%;
+  border: ridge 5px rgb(255, 255, 255);
+  background-image: url('https://cdn.pixabay.com/photo/2014/08/12/00/01/oia-416136_960_720.jpg');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
+}
+
+div{
+  background-color: rgba(255, 255, 255, .45);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+img{
+  padding-right: 15px;
+  float: left;
+  margin-bottom: 10px;
+}
+.bob{
+  color: #aa0661;
+}
+body{
+  background-color: rgb(153, 255, 255);
+}
+
+h1{
+  font-family: 'Amatic SC', cursive;
+  font-size: 40px;
+  color: rgb(5, 43, 104);
+   text-shadow:-1px -1px 0 #d4d4d6,
+		1px -1px 0 #d4d4d6,
+		-1px 1px 0 #d4d4d6,
+		1px 1px 0 #d4d4d6;
+}
+
+p{
+  font-family: 'Satisfy', cursive;
+}
+
+div p{
+  text-shadow:-1px -1px 0 #d4d4d6,
+		1px -1px 0 #d4d4d6,
+		-1px 1px 0 #d4d4d6,
+		1px 1px 0 #d4d4d6;
+  color: rgb(5, 43, 104);
+  font-size: 20px;
+}

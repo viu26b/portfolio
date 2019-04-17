@@ -1,0 +1,58 @@
+#groceries{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  border: ridge 10px rgb(47, 43, 43);
+  padding: 8px;
+  margin: auto;
+  positon: absolute;
+}
+
+#output{
+  color: rgb(255, 0, 0);
+  background-color: rgb(255, 255, 204);
+  font-family: fantasy;
+  font-size:2em;
+}
+
+#center{
+  text-align: center;
+}
+
+.pics{
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.item{
+  color: rgb(78, 7, 47);
+  background-color: rgb(61, 192, 126);
+}
+
+.cost{
+  color: rgb(78, 7, 47);
+  background-color: rgb(223, 229, 41);
+}
+
+img{
+  border: ridge 8px rgb(84, 14, 44);
+}
+
+table, th, td{
+  text-align: center;
+  border: 3px solid black;
+}
+
+h1{
+  color: rgb(78, 7, 47);
+  background-color: rgb(61, 192, 126);
+  font-family: fantasy;
+  font-size: 3em;
+  font-weight: bold;
+  text-align: center;
+}
+
+body{
+  background-image: url("images/shopBasket2.jpg");
+  background-repeat: repeat;
+}

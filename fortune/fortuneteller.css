@@ -1,0 +1,38 @@
+#brown{
+  color: rgb(102, 51, 0);
+}
+.center{
+  display: block;
+ margin-left: auto;
+ margin-right: auto;
+ width: 50%;
+}
+.button{
+  background-color: rgb(102, 0, 51);
+  width: 50em;
+
+}
+/*I borrowed this code from: https://css-tricks.com/overriding-default-button-styles/*/
+button:hover,
+button:focus {
+    background: #0053ba;
+}
+/*I borrowed this code from: https://css-tricks.com/overriding-default-button-styles/*/
+button:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+}
+/*I borrowed this code from: https://css-tricks.com/overriding-default-button-styles/*/
+button:active {
+    transform: scale(0.99);
+}
+body{
+  background-color: rgb(255, 255, 102);
+}
+p{
+  text-align: center;
+}
+h1{
+  font-size: 4em;
+  text-align: center;
+}

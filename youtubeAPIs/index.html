@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Video Watcher</title>
+
+  <link rel="stylesheet" type="text/css" href="http://www.teaching-materials.org/common/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Germania+One" rel="stylesheet">
+
+  <style type="text/css">
+    /* This puts titles always on a separate line from thumbnails */
+    #videos-list img {
+      display: block;
+    }
+    body{
+      background-color: rgb(244, 156, 115)
+    }
+    h2{
+      font-family: 'Germania One', cursive;
+      font-size: 40px;
+      text-align:center;
+    }
+  </style>
+</head>
+
+<body>
+<button><a href="../index.html">Portfolio</a></button>
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="page-header">🐕🐶🐩 Best Videos Ever 🐕🐶🐩</h2>
+
+          <a href="https://twitter.com/share?count=none&hashtags=youtube" class="twitter-share-button"
+            data-lang="en">Tweet</a>
+          <script>
+            !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = "https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs); } }(document, "script", "twitter-wjs");
+          </script>
+
+          <!-- Code for Facebook Button -->
+          <iframe
+            src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&layout=button&size=small&width=59&height=20&appId"
+            width="59" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"
+            allow="encrypted-media">
+          </iframe>
+
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">
+        <ul id="videos-list">
+        </ul>
+      </div>
+      <div class="col-md-9" id="video-watcher">
+      </div>
+    </div>
+
+    <div style="text-align:center; margin-top: 30px; clear:both;">
+      <a href="https://info.flagcounter.com/nEFy"><img
+          src="https://s04.flagcounter.com/count/nEFy/bg_FFFFFF/txt_000000/border_CCCCCC/columns_2/maxflags_12/viewers_0/labels_0/pageviews_0/flags_0/"
+          alt="Flag Counter" border="0"></a>
+
+    </div>
+
+  </div>
+
+  <script type="text/javascript" src="http://www.teaching-materials.org/common/youtube.js"></script>
+  <script type="text/javascript" src="http://www.teaching-materials.org/common/js/jquery.min.js"></script>
+
+  <script>
+    function addVideoToList(video) {
+      var videoLink = $('<a>');
+      videoLink.append(video.snippet.title);
+      videoLink.append('<br>');
+      var linkUrl = videoLink.attr('href');
+      var thumbnailImg = $('<img>');
+      thumbnailImg.attr('src', video.snippet.thumbnails.default.url);
+      videoLink.append(thumbnailImg);
+      videoLink.on('click', function (e) {
+        e.preventDefault();
+        var videoTitle = $('<h2>');
+        videoTitle.html(video.snippet.title + ' <small>' + video.snippet.channelTitle + '</small>');
+        var videoEmbed = $('<iframe></iframe>');
+        videoEmbed.attr('src', youtube.generateEmbedUrl(video.id.videoId) + '?autoplay=1');
+        videoEmbed.attr('width', 560);
+        videoEmbed.attr('height', 315);
+        var videoRating = $('<img></img>');
+        videoRating.attr('src', 'https://chart.googleapis.com/chart?chs=225x125&cht=gom&chd=t:' + video.rating);
+        var videoWatcher = $('#video-watcher');
+        videoWatcher.hide();
+        videoWatcher.empty();
+        videoWatcher.append(videoTitle);
+        videoWatcher.append(videoEmbed);
+        videoWatcher.append(videoRating);
+        videoWatcher.fadeIn();
+      });
+      var videoItem = $('<li>');
+      videoItem.append(videoLink);
+      $('#videos-list').append(videoItem);
+    }
+    var apiKey = "AIzaSyCRXTR0G_Slvgyjj_Vgfry6KLiw8pIMlHs";
+    $.ajax({
+      url: "https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=5&q=dog+bloopers+2018&safeSearch=moderate&type=video&videoEmbeddable=true&fields=items(id%2Csnippet)&key=" + apiKey,
+      dataType: "json",
+      success: function (json) {
+        var videos = json.items;
+        for (var i = 0; i < videos.length; i++) {
+          addVideoToList(videos[i]);
+        }
+      }
+    });
+  </script>
+</body>
+</html>

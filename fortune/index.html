@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Eevee: The Fortune Teller</title>
+  <link rel="stylesheet" href="fortuneteller.css" />
+</head>
+<body>
+  <button><a href="../index.html">Portfolio</a></button>
+  <h1><strong id="brown">Eevee:</strong><b> The Fortune Teller</b></h1>
+  <a href="eeveefan.html">
+  <p><button class="button"><img src="eevee_images/eevee_2.png" alt="brown furry dog" class="center"></button></p>
+  </a>
+<form name="fortuneform" class="center">
+  Name: <input name="yourname"><br />
+  Crush name: <input type="text" id="crush"><br />
+  Favorite place: <input type="text" id="place"><br />
+  Dream job: <input type="text" id="dream"><br />
+  Number of kids: <input type="text" id="kids"><br />
+
+    <input type="button" value="Submit" onclick='document.write("You will be a" + " " + document.fortuneform.dream.value + " " +
+     "in" + " " + document.fortuneform.place.value + "," + " " + "and married to" + " " + document.fortuneform.crush.value + " " + "with" + " " +
+     document.fortuneform.kids.value + " " + "kids.")';
+                                            </form>
+
+  <script src="fortuneteller.js"></script>
+</body>
+</html>
