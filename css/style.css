@@ -227,6 +227,12 @@ h3 a:hover {
   background-size: cover;
 }
 
+#projNine{
+  background-image: url('../creditCardValidator/images/detective.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .proReflect{
   height: 400px;
   width: 250px;
