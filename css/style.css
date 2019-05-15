@@ -132,7 +132,7 @@ section p {
     font-family: 'Dancing Script', cursive;
     font-size: 28px;
     color: #FFFFFF;
-    text-shadow: #474747 3px 5px 2px;
+    text-shadow: #474747 1px 1px 1px;
     padding-left: 60px;
     padding-right: 60px;
 }
